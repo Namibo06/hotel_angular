@@ -11,7 +11,7 @@ const routes: Routes = [
     component:IndexComponent
   },
   {
-    path:'iniciar_sessao',
+    path:'iniciar-sessao',
     component:LoginComponent
   },
   {
@@ -21,6 +21,10 @@ const routes: Routes = [
   {
     path:'suite/:id',
     component:SuitesComponent
+  },
+  {
+    path:'**',
+    component:IndexComponent
   }
 ];
 

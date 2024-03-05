@@ -1,0 +1,181 @@
+.callback{
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.callback p.sucess{
+  background-color: rgb(0,200,200);
+}
+
+.callback p.error{
+  background-color: rgb(200,0,0);
+}
+
+
+/*login*/
+div.login-container{
+  background-color: #2b2b2b;
+}
+
+main{
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+}
+
+main aside img{
+  width: 100%;
+  height: 93vh;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+main aside{
+  width: 40%;
+}
+
+main div.formulario{
+  width: 60%;
+  height: 93vh;
+  background-color: #fff;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+}
+
+div.formulario form{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 80px;
+  width: 400px;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+form h2{
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+form h2 span{
+  color: rgb(0,200,200);
+}
+
+form div.camp{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+div.camp label{
+  color: #888;
+  font-size: 15px;
+  padding-bottom: 3px;
+}
+
+div.camp input{
+  padding: 8px 15px;
+  outline: 0;
+  border-radius: 5px;
+  border: 1px solid #444;
+  transition: 0.2s;
+}
+
+div.camp input:focus{
+  border: 1px solid rgb(0,0,200);
+}
+
+div.password {
+  text-align: end;
+  margin-bottom: 20px;
+}
+
+div.password a{
+  color: #444;
+}
+
+form button{
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #2b2b2b;
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+form button:active{
+  position: relative;
+  top: 1px;
+}
+
+form button:hover{
+  background-color: #2b2b2bda;
+}
+
+div.row{
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+div.row div.left{
+  border-top: 2px solid #444;
+  width: 120px;
+}
+
+div.row span{
+  margin: 0 20px;
+}
+
+div.row div.right{
+  border-top: 2px solid #444;
+  width: 120px;
+}
+
+div.google{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+div.google fa-icon{
+  padding-right: 10px;
+}
+
+div.google a{
+  text-decoration: none;
+  color: #2b2b2b;
+}
+
+div.account{
+  display: flex;
+  justify-content: center;
+  font-size: 17px;
+}
+
+div.account a{
+  color: #555;
+}

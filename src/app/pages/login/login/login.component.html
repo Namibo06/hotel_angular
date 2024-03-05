@@ -1,1 +1,49 @@
-<p>login works!</p>
+<div class="login-container">
+  <main>
+    <aside>
+      <img src="../../../../assets/logar.png" alt="login">
+    </aside>
+
+    <div class="formulario">
+      <div class="callback">
+        <p class="error" *ngIf="callbackError">{{messageError}}</p>
+        <p class="sucess" *ngIf="callbackSucess">{{messageSucess}}</p>
+      </div><!--callback-->
+
+      <form action="" method="post" (submit)="autenticar()">
+        <h2>Hotel <span>Stylist</span></h2>
+
+        <div class="camp">
+          <label>Email</label>
+          <input type="text" [(ngModel)]="email" name="email">
+        </div><!--camp-->
+
+        <div class="camp">
+          <label>Senha</label>
+          <input type="password" [(ngModel)]="password" name="password">
+        </div><!--camp-->
+
+        <div class="password">
+          <a href="">Esqueceu a senha?</a>
+        </div><!--password-->
+
+        <button type="submit">Entrar</button>
+
+        <div class="row">
+          <div class="left"></div><!--left-->
+          <span>or</span>
+          <div class="right"></div><!--right-->
+        </div><!--row-->
+
+        <div class="google">
+
+          <a href=""><fa-icon [icon]="google"></fa-icon> Entrar com o Google</a>
+        </div><!--google-->
+
+        <div class="account">
+          <span>É novo por aqui? <a [routerLink]="['/register']">Crie uma conta</a></span>
+        </div><!--account-->
+      </form>
+    </div><!--formulario-->
+  </main>
+</div><!--login-container-->
