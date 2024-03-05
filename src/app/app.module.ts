@@ -12,6 +12,7 @@ import { RegisterModule } from './pages/register/register.module';
 import { LoginModule } from './pages/login/login.module';
 import { SuitesModule } from './pages/suites/suites.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     RegisterModule,
     LoginModule,
     SuitesModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
