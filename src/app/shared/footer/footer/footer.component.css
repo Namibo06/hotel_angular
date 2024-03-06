@@ -69,6 +69,21 @@ div.final div.icons fa-icon{
   font-size: 30px;
   margin-left: 20px;
   color: #777;
+  cursor: pointer;
+  transition: 0.2s;
+  transition-timing-function: ease-in;
+}
+
+div.final div.icons fa-icon:nth-child(1):hover{
+  color: rgb(0,0,200);
+}
+
+div.final div.icons fa-icon:nth-child(2):hover{
+  color: rgb(219, 28, 162);
+}
+
+div.final div.icons fa-icon:nth-child(3):hover{
+  color: rgb(0, 137, 200);
 }
 
 div.final div.declaration-final p{
