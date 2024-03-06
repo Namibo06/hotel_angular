@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { faCaretDown, faCaretSquareDown, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-index',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './index.component.css'
 })
 export class IndexComponent {
-
+  chevronDown:IconDefinition=faChevronDown;
 }

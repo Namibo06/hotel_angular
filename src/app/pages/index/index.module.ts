@@ -1,12 +1,24 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { IndexComponent } from './index/index.component';
+import { HeaderModule } from '../../shared/header/header.module';
+import { FooterModule } from '../../shared/footer/footer.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [IndexComponent],
+  exports:[IndexComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    HeaderModule,
+    FooterModule,
+    FontAwesomeModule,
+    FormsModule,
+    RouterModule
   ]
 })
 export class IndexModule { }
