@@ -29,6 +29,15 @@ div.content div ul li{
   list-style-type: none;
 }
 
+div.content div ul li button{
+  cursor: pointer;
+  font-size: 18px;
+  color: #444;
+  transition: 0.2s;
+  border: 0;
+  background-color: #fff;
+}
+
 div.content div ul li a{
   font-size: 18px;
   color: #444;
@@ -36,8 +45,8 @@ div.content div ul li a{
   transition: 0.2s;
 }
 
-div.content div ul li a:hover{
-  border-bottom: 2px solid #444;
+div.content div ul li:hover{
+  color: #666;
 }
 
 div.final{

@@ -23,10 +23,18 @@ export class IndexComponent {
   star:IconDefinition=faStar;
   thumbtack:IconDefinition=faThumbtack;
 
-
   down(){
     const el =document.getElementById('welcome_more');
     el?.scrollIntoView({behavior:'smooth'});
   }
 
+  depoiments(){
+    const depoiments = document.getElementById('depoiments');
+    depoiments?.scrollIntoView({behavior:'smooth'});
+  }
+
+  accommodation(){
+    const accommodation = document.getElementById('accommodation');
+    accommodation?.scrollIntoView({behavior:'smooth'});
+  }
 }

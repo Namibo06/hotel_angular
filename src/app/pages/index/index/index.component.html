@@ -20,7 +20,7 @@
 
     </section><!--welcome-more-->
 
-    <section class="accommodations">
+    <section class="accommodations" id="accommodation">
       <div class="our-accommodations">
         <div class="title">
           <h2>Algumas acomodações incluidas:</h2>
@@ -80,7 +80,7 @@
       </aside>
     </section><!--accommodations-->
 
-    <section class="depoiments">
+    <section class="depoiments" id="depoiments">
       <h2>Depoimento de nossos clientes</h2>
 
       <div class="row">
@@ -176,7 +176,7 @@
       </div><!--comments-->
     </section><!--depoiments-->
 
-    <section class="location">
+    <section class="location" id="location">
       <div class="address">
         <h2>Aonde estamos localizado:</h2>
 
@@ -216,6 +216,6 @@
   </main>
 
   <footer>
-    <app-footer></app-footer>
+    <app-footer (enviarDadosDepoiments)="depoiments()" (enviarDadosAccommodation)="accommodation()"></app-footer>
   </footer>
 </div><!--index-container-->
