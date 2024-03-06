@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
-import { faCaretDown, faCaretSquareDown, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { Icon, IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { faAccessibleIcon } from '@fortawesome/free-brands-svg-icons';
+import { faBacon, faBicycle, faChevronDown, faCoffee, faDog, faHouse, faParking, faSquareParking, faStar, faThumbtack, faUtensils, faWifi, faWind } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-index',
@@ -9,4 +10,16 @@ import { faCaretDown, faCaretSquareDown, faChevronDown } from '@fortawesome/free
 })
 export class IndexComponent {
   chevronDown:IconDefinition=faChevronDown;
+  wifi:IconDefinition=faWifi;
+  parking:IconDefinition=faParking;
+  bike:IconDefinition=faBicycle;
+  pet:IconDefinition=faDog;
+  breakfeast:IconDefinition=faBacon;
+  coffee:IconDefinition=faCoffee;
+  wind:IconDefinition=faWind;
+  house:IconDefinition=faHouse;
+  utensils:IconDefinition=faUtensils;
+  acessibility:IconDefinition=faAccessibleIcon;
+  star:IconDefinition=faStar;
+  thumbtack:IconDefinition=faThumbtack;
 }

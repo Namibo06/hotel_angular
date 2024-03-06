@@ -7,73 +7,76 @@
     <section class="welcome">
       <h1>HOTEL PRAIANO</h1>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem perferendis quibusdam dolorum qui totam id aliquid eius minus, eveniet in sit voluptatem quisquam inventore nam consequuntur quod, sunt voluptate corporis.</p>
-      <span>Veja mais <fa-icon [icon]="chevronDown"></fa-icon></span>
+      <button>Veja mais <fa-icon [icon]="chevronDown"></fa-icon></button>
     </section><!--welcome-->
 
     <section class="welcome-more">
-      <img src="" alt="">
+      <img src="../../../../assets/inicial.jpg" alt="inicial">
 
-      <h2>Fique Mais,Pague Menos!</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos aliquam repudiandae, unde debitis eligendi natus labore suscipit laudantium qui architecto eum mollitia asperiores sit quo, perferendis ipsam! Commodi, numquam!</p>
+      <div class="welcome-more-wrapper">
+        <h2>Fique Mais,Pague Menos!</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos aliquam repudiandae, unde debitis eligendi natus labore suscipit laudantium qui architecto eum mollitia asperiores sit quo, perferendis ipsam! Commodi, numquam!</p>
+      </div><!--welome-more-wrapper-->
+
     </section><!--welcome-more-->
 
     <section class="accommodations">
       <div class="our-accommodations">
         <div class="title">
-          <h2>Algumas de nossas acomodações incluidas:</h2>
+          <h2>Algumas acomodações incluidas:</h2>
         </div><!--title-->
 
         <div class="types_of_accommodations">
           <div class="type-single">
-            <fa-icon></fa-icon>
+            <fa-icon [icon]="wifi"></fa-icon>
             <span>Wifi Gratuito</span>
           </div><!--type-single-->
 
           <div class="type-single">
-            <fa-icon></fa-icon>
-            <fa-icon></fa-icon>
+            <fa-icon [icon]="parking"></fa-icon>
+            <fa-icon [icon]="bike"></fa-icon>
             <span>Estacionamento de bicicletas gratuito</span>
           </div><!--type-single-->
 
           <div class="type-single">
-            <fa-icon></fa-icon>
+            <fa-icon [icon]="pet"></fa-icon>
             <span>Permitido pets</span>
           </div><!--type-single-->
 
           <div class="type-single">
-            <fa-icon></fa-icon>
+            <fa-icon [icon]="breakfeast"></fa-icon>
             <span>Café da Manhã</span>
           </div><!--type-single-->
 
           <div class="type-single">
-            <fa-icon></fa-icon>
+            <fa-icon [icon]="coffee"></fa-icon>
             <span>Comodidades para fazer café/chá em todos quartos</span>
           </div><!--type-single-->
 
           <div class="type-single">
-            <fa-icon></fa-icon>
+            <fa-icon [icon]="wind"></fa-icon>
             <span>Ar condicionado</span>
           </div><!--type-single-->
 
           <div class="type-single">
-            <fa-icon></fa-icon>
+            <fa-icon [icon]="house"></fa-icon>
             <span>Todas casas com suítes</span>
           </div><!--type-single-->
 
           <div class="type-single">
-            <fa-icon></fa-icon>
+            <fa-icon [icon]="utensils"></fa-icon>
             <span>Restaurante/Bar</span>
           </div><!--type-single-->
 
           <div class="type-single">
-            <fa-icon></fa-icon>
+            <fa-icon [icon]="acessibility"></fa-icon>
             <span>Facilidades para pessoas com deficiência</span>
           </div><!--type-single-->
         </div><!--types_of_accommodations-->
       </div><!--our-accommodations-->
 
       <aside>
-        <img src="" alt="">
+        <img src="../../../../assets/casa.jpg" alt="casa">
       </aside>
     </section><!--accommodations-->
 
@@ -81,7 +84,7 @@
       <h2>Depoimento de nossos clientes</h2>
 
       <div class="row">
-        <span><fa-icon></fa-icon> 4.8 / 5 </span>
+        <span><fa-icon [icon]="star"></fa-icon> 4.8 / 5 </span>
 
         <button type="button">Veja todos os 44 comentários</button>
       </div><!--row-->
@@ -100,11 +103,11 @@
           </div><!--comment-->
 
           <div class="stars">
-            <fa-icon></fa-icon>
-            <fa-icon></fa-icon>
-            <fa-icon></fa-icon>
-            <fa-icon></fa-icon>
-            <fa-icon></fa-icon>
+            <fa-icon [icon]="star"></fa-icon>
+            <fa-icon [icon]="star"></fa-icon>
+            <fa-icon [icon]="star"></fa-icon>
+            <fa-icon [icon]="star"></fa-icon>
+            <fa-icon [icon]="star"></fa-icon>
           </div><!--stars-->
         </div><!--comments-single-->
 
@@ -121,11 +124,11 @@
           </div><!--comment-->
 
           <div class="stars">
-            <fa-icon></fa-icon>
-            <fa-icon></fa-icon>
-            <fa-icon></fa-icon>
-            <fa-icon></fa-icon>
-            <fa-icon></fa-icon>
+            <fa-icon [icon]="star"></fa-icon>
+            <fa-icon [icon]="star"></fa-icon>
+            <fa-icon [icon]="star"></fa-icon>
+            <fa-icon [icon]="star"></fa-icon>
+            <fa-icon [icon]="star"></fa-icon>
           </div><!--stars-->
         </div><!--comments-single-->
 
@@ -142,11 +145,11 @@
           </div><!--comment-->
 
           <div class="stars">
-            <fa-icon></fa-icon>
-            <fa-icon></fa-icon>
-            <fa-icon></fa-icon>
-            <fa-icon></fa-icon>
-            <fa-icon></fa-icon>
+            <fa-icon [icon]="star"></fa-icon>
+            <fa-icon [icon]="star"></fa-icon>
+            <fa-icon [icon]="star"></fa-icon>
+            <fa-icon [icon]="star"></fa-icon>
+            <fa-icon [icon]="star"></fa-icon>
           </div><!--stars-->
         </div><!--comments-single-->
 
@@ -163,50 +166,52 @@
           </div><!--comment-->
 
           <div class="stars">
-            <fa-icon></fa-icon>
-            <fa-icon></fa-icon>
-            <fa-icon></fa-icon>
-            <fa-icon></fa-icon>
-            <fa-icon></fa-icon>
+            <fa-icon [icon]="star"></fa-icon>
+            <fa-icon [icon]="star"></fa-icon>
+            <fa-icon [icon]="star"></fa-icon>
+            <fa-icon [icon]="star"></fa-icon>
+            <fa-icon [icon]="star"></fa-icon>
           </div><!--stars-->
         </div><!--comments-single-->
       </div><!--comments-->
     </section><!--depoiments-->
 
     <section class="location">
-      <h2>Aonde estamos:</h2>
+      <div class="address">
+        <h2>Aonde estamos localizado:</h2>
 
-      <p><fa-icon></fa-icon> Itacimirim,Camaçari-Bahia</p>
-
-      <div id="map"></div><!--map-->
+        <p><fa-icon [icon]="thumbtack"></fa-icon> Itacimirim,Camaçari-Bahia</p>
+      </div><!--address-->
     </section><!--location-->
 
     <section class="informations">
       <h2>Algumas informações importantes</h2>
 
-      <div class="rules">
-        <div class="title">
-          <h2>Regras do Hotel:</h2>
-        </div><!--title-->
+      <div class="information-row">
+        <div class="rules">
+          <div class="title">
+            <h2>Regras do Hotel:</h2>
+          </div><!--title-->
 
-        <ul>
-          <li>Entrada: 08:00 - 11:00</li>
-          <li>Saída: 12:00 - 21:00</li>
-          <li>Horas de Silêncio: 22:00 - 07:00</li>
-        </ul>
-      </div><!--rules-->
+          <ul>
+            <li>Entrada: 08:00 - 11:00</li>
+            <li>Saída: 12:00 - 21:00</li>
+            <li>Horas de Silêncio: 22:00 - 07:00</li>
+          </ul>
+        </div><!--rules-->
 
-      <div class="cancellation-policy">
-        <div class="title">
-          <h2>Política de Cancelamento:</h2>
-        </div><!--title-->
+        <div class="cancellation-policy">
+          <div class="title">
+            <h2>Política de Cancelamento:</h2>
+          </div><!--title-->
 
-        <ul>
-          <li>48 horas: reembolso total:você recebe 100% do que pagou.</li>
-          <li>7 dias: reembolso parcial: você recebe 50% por cada noite.Não reembolsado outros serviços.</li>
-          <li>24 horas: sem reembolso.</li>
-        </ul>
-      </div><!--cancellation-policy-->
+          <ul>
+            <li>48 horas: reembolso total:você recebe 100% do que pagou.</li>
+            <li>7 dias: reembolso parcial: você recebe 50% por cada noite.Não reembolsado outros serviços.</li>
+            <li>24 horas: sem reembolso.</li>
+          </ul>
+        </div><!--cancellation-policy-->
+      </div><!--information-row-->
     </section><!--informations-->
   </main>
 

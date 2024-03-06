@@ -1,0 +1,68 @@
+div.footer-container{
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 90px;
+}
+
+div.footer-container > div.title h2{
+  padding: 60px 0 60px 0px;
+  font-size: 27px;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
+div.content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+div.content div div.title h2{
+  font-size: 23px;
+  font-weight: bold;
+  color: #333;
+  padding-bottom: 10px;
+}
+
+div.content div ul li{
+  padding-bottom: 8px;
+  list-style-type: none;
+}
+
+div.content div ul li a{
+  font-size: 18px;
+  color: #444;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+div.content div ul li a:hover{
+  border-bottom: 2px solid #444;
+}
+
+div.final{
+  padding-top: 150px;
+  position: relative;
+  right: 10px;
+  bottom: 10px;
+  position: relative;
+}
+
+div.final div.icons{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 20px;
+  top: 100px;
+}
+
+div.final div.icons fa-icon{
+  font-size: 30px;
+  margin-left: 20px;
+  color: #777;
+}
+
+div.final div.declaration-final p{
+  font-size: 13px;
+  color: #888;
+}

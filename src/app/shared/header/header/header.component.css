@@ -1,0 +1,15 @@
+div.header-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding:20px 20px 40px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 a{
+  font-size: 25px;
+  font-weight: 300;
+  color: #555;
+  text-decoration: none;
+}
