@@ -36,7 +36,32 @@ export class RegisterComponent {
   }
 
   cadastrar(){
+    if(this.password !== this.confirm_password){
+      this.callbackError=true;
+      this.messageError="Senhas não batem";
+      this.password="";
+      this.confirm_password="";
 
+      setTimeout(()=>{
+        this.callbackError=false;
+      },5000);
+    }else{
+      this.service.register(this.first_name,this.last_name,this.email,this.phone,this.password).subscribe({
+        next:(res)=>{
+          console.log(res);
+          this.messageSucess=res.message;
+          this.callbackSucess=true;
+
+          setTimeout(()=>{
+            this.callbackSucess=false;
+            window.location.href='/iniciar-sessao';
+          },5000);
+        },
+        error:(err)=>{
+          console.log(err);
+        }
+      });
+    }
   }
 
 }
