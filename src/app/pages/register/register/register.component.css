@@ -1,0 +1,137 @@
+.callback{
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.callback p{
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.callback p.sucess{
+  background-color: rgb(0,200,200);
+}
+
+.callback p.error{
+  background-color: rgb(200,0,0);
+}
+
+
+/*register*/
+div.register-container{
+  background-color: #2b2b2b;
+}
+
+main{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+}
+
+main aside img{
+  width: 100%;
+  height: 97vh;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+main aside{
+  width: 40%;
+}
+
+main div.formulario{
+  width: 60%;
+  height: 97vh;
+  background-color: #fff;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+}
+
+div.formulario form{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20px;
+  width: 400px;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+form h2{
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+form h2 span{
+  color: rgb(0,200,200);
+}
+
+form div.camp{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+div.camp label{
+  color: #888;
+  font-size: 15px;
+  padding-bottom: 3px;
+}
+
+div.camp input{
+  padding: 8px 15px;
+  outline: 0;
+  border-radius: 5px;
+  border: 1px solid #444;
+  transition: 0.2s;
+}
+
+div.camp input:focus{
+  border: 1px solid rgb(0,0,200);
+}
+
+form button{
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #2b2b2b;
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+form button:active{
+  position: relative;
+  top: 1px;
+}
+
+form button:hover{
+  background-color: #2b2b2bda;
+}
+
+div.account{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 17px;
+}
+
+div.account a{
+  color: #555;
+}

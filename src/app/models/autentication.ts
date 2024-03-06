@@ -2,7 +2,7 @@ export type autentication={
   status:number,
   token:string,
   message:string,
-  user?:{
+  user:{
     first_name:string,
     last_name:string,
     email:string,

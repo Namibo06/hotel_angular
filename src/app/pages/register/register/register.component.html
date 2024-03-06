@@ -1,1 +1,55 @@
-<p>register works!</p>
+<div class="register-container">
+  <main>
+    <aside>
+      <img src="../../../../assets/register.jpg" alt="register">
+    </aside>
+
+    <div class="formulario">
+      <div class="callback">
+        <p class="error" *ngIf="callbackError">{{messageError}}</p>
+        <p class="sucess" *ngIf="callbackSucess">{{messageSucess}}</p>
+      </div><!--callback-->
+
+      <form action="" method="post" (submit)="cadastrar()">
+        <h2>Hotel <span>Stylist</span></h2>
+
+        <div class="camp">
+          <label>Nome</label>
+          <input type="text" [(ngModel)]="first_name" name="first_name">
+        </div><!--camp-->
+
+        <div class="camp">
+          <label>Sobrenome</label>
+          <input type="text" [(ngModel)]="last_name" name="last_name">
+        </div><!--camp-->
+
+        <div class="camp">
+          <label>Email</label>
+          <input type="text" [(ngModel)]="email" name="email">
+        </div><!--camp-->
+
+        <div class="camp">
+          <label>Telefone</label>
+          <input type="text" [(ngModel)]="phone" name="phone">
+        </div><!--camp-->
+
+        <div class="camp">
+          <label>Senha</label>
+          <input type="password" [(ngModel)]="password" name="password">
+        </div><!--camp-->
+
+        <div class="camp">
+          <label>Confirmar Senha</label>
+          <input type="password" [(ngModel)]="confirm_password" name="confirm_password">
+        </div><!--camp-->
+
+        <button type="submit">Enviar</button>
+
+        <div class="account">
+          <span>Já tem conta? <a [routerLink]="['/iniciar-sessao']">Clique aqui</a></span>
+        </div><!--account-->
+      </form>
+    </div><!--formulario-->
+  </main>
+</div><!--register-container-->
+

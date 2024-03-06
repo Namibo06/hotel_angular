@@ -15,7 +15,7 @@ export class ApiUserService {
   ) { }
 
 
-  login(email:string|undefined,password:string|undefined):Observable<autentication>{
+  login(email:string,password:string):Observable<autentication>{
     const body={
       'email':email,
       'password':password

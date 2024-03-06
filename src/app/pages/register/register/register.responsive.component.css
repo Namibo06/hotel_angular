@@ -1,0 +1,16 @@
+@media screen and (width < 1200px) {
+  main aside,main div.formulario{
+    width: 50%;
+  }
+}
+
+@media screen and (width < 950px) {
+  main aside{
+    display: none;
+  }
+
+  main div.formulario{
+    width: 100%;
+    border-radius: 20px;
+  }
+}

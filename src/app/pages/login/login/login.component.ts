@@ -13,11 +13,11 @@ import { ApiUserService } from '../../../service/api-user.service';
 })
 export class LoginComponent {
   /*atributos*/
-  password:string|undefined='';
-  email:string|undefined='';
-  phone:string|undefined='';
-  first_name:string|undefined='';
-  last_name:string|undefined='';
+  password:string='';
+  email:string='';
+  phone:string='';
+  first_name:string='';
+  last_name:string='';
   token:string='';
   status:number=0;
 
@@ -41,14 +41,17 @@ export class LoginComponent {
     this.service.login(this.email,this.password).subscribe({
       next:(res)=>{
         console.log(res);
-        this.first_name=res.user?.first_name;
-        this.last_name=res.user?.last_name;
-        this.email=res.user?.email;
-        this.phone=res.user?.phone;
+        this.first_name=res.user.first_name;
+        this.last_name=res.user.last_name;
+        this.email=res.user.email;
+        this.phone=res.user.phone;
         this.token=res.token;
         this.status=res.status;
 
         if(this.status===200){
+          this.cookie.set('token',this.token,3);
+          this.cookie.set('email',this.email,3);
+          this.cookie.set('first_name',this.first_name,3);
           this.callbackSucess=true;
           this.messageSucess=res.message;
           setTimeout(()=>{
