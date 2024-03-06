@@ -13,10 +13,14 @@ import { LoginModule } from './pages/login/login.module';
 import { SuitesModule } from './pages/suites/suites.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
+import { SuiteComponent } from './pages/suite/suite/suite.component';
+import { SobreComponent } from './pages/sobre/sobre/sobre.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    SuiteComponent,
+    SobreComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { ANIMATION_MODULE_TYPE, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IndexComponent } from './index/index.component';
 import { HeaderModule } from '../../shared/header/header.module';
@@ -6,7 +6,7 @@ import { FooterModule } from '../../shared/footer/footer.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-
+import {ɵBrowserAnimationBuilder} from '@angular/animations';
 
 
 @NgModule({
@@ -18,7 +18,7 @@ import { RouterModule } from '@angular/router';
     FooterModule,
     FontAwesomeModule,
     FormsModule,
-    RouterModule
-  ]
+    RouterModule,
+  ],
 })
 export class IndexModule { }

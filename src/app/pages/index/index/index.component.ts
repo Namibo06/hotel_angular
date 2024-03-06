@@ -22,4 +22,11 @@ export class IndexComponent {
   acessibility:IconDefinition=faAccessibleIcon;
   star:IconDefinition=faStar;
   thumbtack:IconDefinition=faThumbtack;
+
+
+  down(){
+    const el =document.getElementById('welcome_more');
+    el?.scrollIntoView({behavior:'smooth'});
+  }
+
 }

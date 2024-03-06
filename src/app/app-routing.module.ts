@@ -4,6 +4,8 @@ import { IndexComponent } from './pages/index/index/index.component';
 import { LoginComponent } from './pages/login/login/login.component';
 import { RegisterComponent } from './pages/register/register/register.component';
 import { SuitesComponent } from './pages/suites/suites/suites.component';
+import { SuiteComponent } from './pages/suite/suite/suite.component';
+import { SobreComponent } from './pages/sobre/sobre/sobre.component';
 
 const routes: Routes = [
   {
@@ -19,8 +21,16 @@ const routes: Routes = [
     component:RegisterComponent
   },
   {
+    path:'suites',
+    component:SuitesComponent,
+  },
+  {
     path:'suite/:id',
-    component:SuitesComponent
+    component:SuiteComponent
+  },
+  {
+    path:'sobre',
+    component:SobreComponent
   },
   {
     path:'**',
