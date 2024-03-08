@@ -58,11 +58,11 @@
               </div><!--information-suit-->
 
               @if (suit.avaliable === "sim") {
-                <button type="button" disabled>Sem visitas no momento</button>
+                <button type="button" disabled style="cursor: default;">Sem visitas no momento</button>
               }@else {
-                <button type="button">
-                  <a [routerLink]="['/suite/'+suit.number]">Visite Agora</a>
-                </button>
+                <a [routerLink]="['/suite/'+suit.number]">
+                  <button type="button">Visite Agora</button>
+                </a>
               }
 
             </div><!--suite-single-->

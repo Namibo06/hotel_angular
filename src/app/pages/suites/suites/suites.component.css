@@ -95,6 +95,7 @@ swiper-slide button{
   cursor: pointer;
   transition: 0.2s;
   margin-left: 10px;
+  color: #fff;
 }
 
 swiper-slide button:hover{

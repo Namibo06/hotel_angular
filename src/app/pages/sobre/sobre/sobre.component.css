@@ -1,0 +1,53 @@
+div.sobre-container{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section div.historia{
+  margin-top: 40px;
+}
+
+section div.historia,section div.vantagens{
+  margin-bottom: 60px;
+}
+
+div div.title{
+  padding-left: 70px;
+  padding-bottom: 10px;
+}
+
+section div.historia p{
+  padding: 0 80px;
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 300;
+  color: #555;
+  letter-spacing: 1.5px;
+  line-height: 24px;
+}
+
+div div.title h1{
+  font-size: 30px;
+  font-weight: 400;
+  color: #444;
+}
+
+section div.vantagens ul{
+  padding-left: 80px;
+}
+
+section div.vantagens li{
+  list-style-type: none;
+  font-size: 18px;
+  padding-bottom: 10px;
+  letter-spacing: 1.5px;
+  color: #444;
+}
+
+section div.vantagens p{
+  padding: 0 80px;
+  padding-top: 20px;
+  font-size: 17px;
+  letter-spacing: 1.5px;
+  line-height: 24px;
+
+}

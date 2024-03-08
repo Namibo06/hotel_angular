@@ -22,6 +22,7 @@ export class SuiteComponent {
   area:string='';
   price:string='';
   avaliable:string|null='';
+  status:number=0;
 
   /**icons */
   bedroomIcon:IconDefinition=faBed;
@@ -75,6 +76,17 @@ export class SuiteComponent {
         if(this.avaliable === "sim"){
           window.location.href='/suites';
         }
+
+        if(this.status===200){
+          this.messageSucess=res.message;
+          this.callbackSucess=true;
+
+          setTimeout(() => {
+            this.callbackSucess=false;
+            window.location.href='/suites'
+          },3000);
+        }
+
       },
       error:(err)=>{
         console.log(err);
