@@ -45,8 +45,8 @@ div.content div ul li a{
   transition: 0.2s;
 }
 
-div.content div ul li:hover{
-  color: #666;
+div.content div ul li a:hover,div.content div ul li button:hover{
+  color: #7777;
 }
 
 div.final{

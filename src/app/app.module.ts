@@ -15,12 +15,12 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
 import { SuiteComponent } from './pages/suite/suite/suite.component';
 import { SobreComponent } from './pages/sobre/sobre/sobre.component';
+import { SuiteModule } from './pages/suite/suite.module';
+import { SobreModule } from './pages/sobre/sobre.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SuiteComponent,
-    SobreComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,7 +33,8 @@ import { SobreComponent } from './pages/sobre/sobre/sobre.component';
     SuitesModule,
     FontAwesomeModule,
     HttpClientModule,
-
+    SuiteModule,
+    SobreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

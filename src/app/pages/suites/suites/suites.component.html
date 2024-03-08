@@ -4,7 +4,67 @@
   </header>
 
   <main>
+    <section class="welcome">
+      <h2>Seja bem vindo a seção de quartos</h2>
+      <p>Clique em visitar e marque seu dia</p>
+    </section><!--welcome-->
 
+
+    <section class="suites">
+      <div class="all-suites" >
+        <swiper-container
+        perView="1"
+        pagination="true"
+        navigation="true"
+        pagination-clickable="true"
+        >
+          <swiper-slide *ngFor="let suit of this.suites">
+            <div class="suit-single">
+              <picture>
+                <img src="../../../../assets/casa-suite.jpg" alt="suíte">
+              </picture>
+
+              <div class="content-suit">
+                <p>Nome : {{suit.name}}</p>
+
+                <p>Número da casa: {{suit.number}}</p>
+              </div><!--content-suit-->
+
+              <div class="information-suit">
+                <div>
+                  <span>
+                    <fa-icon [icon]="bedroom"></fa-icon>
+                    {{suit.number_of_bedroom}}
+                  </span>
+
+                  <span>
+                    <fa-icon [icon]="bathroom"></fa-icon>
+                    {{suit.number_of_bathroom}}
+                  </span>
+                </div>
+
+                <div>
+                  <span>
+                    <fa-icon [icon]="area"></fa-icon>
+                    {{suit.area}}m<sup>2</sup>
+                  </span>
+
+                  <span>
+                    <fa-icon [icon]="price"></fa-icon>
+                    {{suit.price}}
+                  </span>
+                </div>
+
+              </div><!--information-suit-->
+
+              <button type="button">
+                <a [routerLink]="['/suite/'+suit.number]">Visite Agora</a>
+              </button>
+            </div><!--suite-single-->
+          </swiper-slide>
+        </swiper-container>
+      </div><!--all-suites-->
+    </section>
   </main>
 
   <footer>
