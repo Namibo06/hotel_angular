@@ -1,0 +1,68 @@
+div.suit{
+  background-color: rgba(0,0,0,0.7);
+  height: 500px;
+  color: #e6e2e2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div.image{
+  background-image: url('../../../../assets/inicial.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+div.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 40px 0 90px 0;
+}
+
+div.row div h1,div.row div h2{
+  font-size: 35px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+div.content{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  text-align: center;
+}
+
+div.content div{
+  margin-bottom: 40px;
+}
+
+div.content div p{
+  font-size: 21px;
+}
+
+div.suit button{
+  width: 40%;
+  padding: 15px 10px;
+  position: relative;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 0;
+  border-radius: 5px;
+  background-color: #e6e2e2;
+  font-size: 16px;
+  font-weight: bold;
+  color: #444;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+div.suit button:hover{
+  background-color: #fff;
+}
+
+div.suit button:active{
+  position: relative;
+  top: 92px;
+}

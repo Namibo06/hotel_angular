@@ -4,11 +4,45 @@
   </header>
 
   <main>
-    <div class="suit">
-      <div class="name">
-        <h2>{{this.name}}</h2>
-      </div><!--name-->
-    </div><!--suit-->
+    <div class="image">
+      <div class="suit">
+        <div class="row">
+          <div class="name">
+            <h1>{{this.name}}</h1>
+          </div><!--name-->
+
+          <div class="number">
+            <h2>Nº{{this.number}}</h2>
+          </div><!--number-->
+        </div><!--row-->
+
+        <div class="content">
+          <div class="number_of_bedroom">
+            <p>{{number_of_bedroom}}</p>
+          </div><!--number_of_bedroom-->
+
+          <div class="number_of_bathroom">
+            <p>{{number_of_bathroom}}</p>
+          </div><!--number_of_bathroom-->
+
+          <div class="area">
+            <p>{{this.area}}</p>
+          </div><!--area-->
+
+          <div class="price">
+            <p>{{this.price}}</p>
+          </div><!--price-->
+        </div><!--content-->
+
+        <button type="button">Marque um horário já</button>
+      </div><!--suit-->
+    </div><!--image-->
+
+    <div class="formulario">
+      <form action="" method="post">
+        <input type="hidden" name="{{this.id}}">
+      </form>
+    </div><!--formulario-->
   </main>
 
   <footer>
