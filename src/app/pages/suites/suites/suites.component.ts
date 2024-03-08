@@ -15,6 +15,7 @@ export class SuitesComponent {
   bathroom:IconDefinition=faBath;
   area:IconDefinition=faLayerGroup;
   price:IconDefinition=faMoneyBillWave;
+  avaliable:string|null='';
 
   constructor(
     private service:ApiHotelService

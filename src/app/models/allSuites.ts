@@ -8,7 +8,8 @@ export type allSuites={
       number_of_bedroom:number,
       number_of_bathroom:number,
       area:string,
-      price:string
+      price:string,
+      avaliable:string|null
     }
   ]
 }

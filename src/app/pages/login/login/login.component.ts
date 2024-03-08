@@ -20,6 +20,7 @@ export class LoginComponent {
   last_name:string='';
   token:string='';
   status:number=0;
+  id:number=0;
 
   /**icons */
   google:IconDefinition=faGoogle;
@@ -47,11 +48,13 @@ export class LoginComponent {
         this.phone=res.user.phone;
         this.token=res.token;
         this.status=res.status;
+        this.id=res.user.id;
 
         if(this.status===200){
           this.cookie.set('token',this.token,3);
           this.cookie.set('email',this.email,3);
           this.cookie.set('first_name',this.first_name,3);
+          this.cookie.set('id',this.id.toString(),3);
           this.callbackSucess=true;
           this.messageSucess=res.message;
           setTimeout(()=>{

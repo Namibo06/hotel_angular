@@ -57,9 +57,14 @@
 
               </div><!--information-suit-->
 
-              <button type="button">
-                <a [routerLink]="['/suite/'+suit.number]">Visite Agora</a>
-              </button>
+              @if (suit.avaliable === "sim") {
+                <button type="button" disabled>Sem visitas no momento</button>
+              }@else {
+                <button type="button">
+                  <a [routerLink]="['/suite/'+suit.number]">Visite Agora</a>
+                </button>
+              }
+
             </div><!--suite-single-->
           </swiper-slide>
         </swiper-container>

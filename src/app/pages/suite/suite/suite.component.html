@@ -18,29 +18,68 @@
 
         <div class="content">
           <div class="number_of_bedroom">
+            <fa-icon [icon]="bedroomIcon"></fa-icon>
             <p>{{number_of_bedroom}}</p>
           </div><!--number_of_bedroom-->
 
           <div class="number_of_bathroom">
+            <fa-icon [icon]="bathroomIcon"></fa-icon>
             <p>{{number_of_bathroom}}</p>
           </div><!--number_of_bathroom-->
 
           <div class="area">
+            <fa-icon [icon]="areaIcon"></fa-icon>
             <p>{{this.area}}</p>
           </div><!--area-->
 
           <div class="price">
+            <fa-icon [icon]="priceIcon"></fa-icon>
             <p>{{this.price}}</p>
           </div><!--price-->
         </div><!--content-->
 
-        <button type="button">Marque um horário já</button>
+        <button type="button" (click)="downFormulario()">Marque já um horário</button>
       </div><!--suit-->
     </div><!--image-->
 
     <div class="formulario">
-      <form action="" method="post">
+      <h2 id="formulario">Marcar Horário</h2>
+
+      <form action="" method="post" (submit)="marcar()">
         <input type="hidden" name="{{this.id}}">
+
+        <div class="callback">
+          <p class="error" *ngIf="callbackError">{{messageError}}</p>
+          <p class="sucess" *ngIf="callbackSucess">{{messageSucess}}</p>
+        </div><!--callback-->
+
+        <div class="camp">
+          <label>Data de Entrada</label>
+          <input type="text" name="date_of" mask="00/00/0000" [(ngModel)]="date_of">
+        </div><!--camp-->
+
+        <div class="camp">
+          <label>Horários de Entrada Disponíveis</label>
+          <select name="hour_minute_of" [(ngModel)]="hour_minute_of">
+            <option value="">Escolha uma opção</option>
+            <option value="1700">17:00</option>
+          </select>
+        </div><!--camp-->
+
+        <div class="camp">
+          <label>Data de Saída</label>
+          <input type="text" name="date_to" [(ngModel)]="date_to" mask="00/00/0000">
+        </div><!--camp-->
+
+        <div class="camp">
+          <label>Horários de Saída Disponíveis</label>
+          <select name="hour_minute_to" [(ngModel)]="hour_minute_to">
+            <option value="">Escolha uma opção</option>
+            <option value="1700">17:00</option>
+          </select>
+        </div><!--camp-->
+
+        <button type="submit">Marcar</button>
       </form>
     </div><!--formulario-->
   </main>
