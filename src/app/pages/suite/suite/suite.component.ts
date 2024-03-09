@@ -9,7 +9,7 @@ import { NgxMaskDirective, provideNgxMask } from 'ngx-mask';
 @Component({
   selector: 'app-suite',
   templateUrl: './suite.component.html',
-  styleUrl: './suite.component.css',
+  styleUrls: ['./suite.component.css','./suite.responsive.component.css'],
 })
 export class SuiteComponent {
 

@@ -1,0 +1,140 @@
+@media screen and (width < 960px){
+  /*suit*/
+  div.suit,div.image{
+    height: 400px;
+  }
+
+  div.row{
+    padding: 40px 0 50px 0;
+  }
+
+  div.row div h1,div.row div h2{
+    font-size: 30px;
+    letter-spacing: 1.5px;
+  }
+
+  div.content div fa-icon{
+    padding-right: 5px;
+    font-size: 19px;
+  }
+
+  div.content div p{
+    font-size: 19px;
+  }
+
+  div.suit button{
+    top: 40px;
+  }
+
+  /*formulario*/
+  div.formulario h2{
+    margin-left: 0px;
+    font-size: 24px;
+    width: 189px;
+    margin: 40px auto;
+  }
+
+  div.formulario form{
+    flex-direction: column;
+    align-items: normal;
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+  form div.camp{
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  form div.camp label{
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    padding-bottom: 4px;
+  }
+
+  form div.camp input{
+    padding: 8px 15px;
+  }
+
+  form div.camp select{
+    padding: 8px 10px;
+  }
+}
+
+@media screen and (width < 580px){
+  /*suit*/
+  div.suit,div.image{
+    height: 350px;
+  }
+
+  div.row div h1,div.row div h2{
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+
+  div.content div fa-icon{
+    padding-right: 5px;
+    font-size: 17px;
+  }
+
+  div.content div p{
+    font-size: 17px;
+  }
+
+  div.suit button{
+    top: 20px;
+    width: 70%;
+  }
+}
+
+@media screen and (width < 390px){
+  /*suit*/
+  div.suit,div.image{
+    height: 300px;
+  }
+
+  div.row div h1,div.row div h2{
+    font-size: 21px;
+    letter-spacing: 0px;
+  }
+
+  div.content div fa-icon{
+    font-size: 15px;
+  }
+
+  div.content div p{
+    font-size: 15px;
+  }
+
+  div.suit button{
+    top: 0px;
+    width: 90%;
+  }
+
+  /*formulario*/
+  div.formulario form{
+    padding: 0 10px;
+  }
+
+  form div.camp{
+    margin-bottom: 25px;
+  }
+
+  form div.camp label{
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (width < 300px){
+  /*formulario*/
+  div.formulario h2{
+    font-size: 21px;
+    width: 169px;
+  }
+
+  form div.camp label{
+    font-size: 14px;
+    letter-spacing: 0px;
+  }
+}
