@@ -56,7 +56,7 @@
 @media screen and (width < 680px) {
   div.footer-container > div.title h2{
     font-size: 25px;
-    width: 280px;
+    width: 250px;
     margin: 0 auto;
   }
 
