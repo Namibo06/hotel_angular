@@ -100,3 +100,10 @@
     padding: 0 20px;
   }
 }
+
+@media screen and (width < 320px) {
+  div.final div.declaration-final p{
+    padding: 0 5px;
+    font-size: 10px;
+  }
+}
