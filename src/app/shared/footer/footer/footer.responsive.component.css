@@ -1,0 +1,102 @@
+@media screen and (width < 930px) {
+  div.footer-container{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+  }
+
+  div.footer-container > div.title h2{
+    text-align: center;
+    font-size: 27px;
+  }
+
+  div.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  div.content div.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  div.content ul{
+    margin-right: 40px;
+  }
+
+  div.final{
+    padding-top: 260px;
+    position: relative;
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    position: relative;
+    text-align: center;
+  }
+
+  div.final div.icons{
+    right: 50%;
+    transform: translateX(50%);
+    top: 200px;
+  }
+
+  div.final div.declaration-final{
+    position: relative;
+    right: 0px;
+    bottom: 0px;
+  }
+}
+
+@media screen and (width < 680px) {
+  div.footer-container > div.title h2{
+    font-size: 25px;
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  div.content{
+    flex-direction: column;
+  }
+
+  div.content div.links{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  div.content ul{
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+
+  div.content div div.title h2{
+    font-size: 21px;
+  }
+
+  div.content div ul li button,div.content div ul li a{
+    font-size: 17px;
+  }
+
+  div.final{
+    padding-top: 550px;
+  }
+
+  div.final div.icons{
+    right: 50%;
+    transform: translateX(50%);
+    top: 480px;
+  }
+
+  div.final div.icons fa-icon:first-child{
+    margin-left: 0;
+  }
+
+  div.final div.declaration-final p{
+    padding: 0 20px;
+  }
+}

@@ -5,7 +5,7 @@ import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
-  styleUrl: './footer.component.css'
+  styleUrls: ['./footer.component.css','./footer.responsive.component.css']
 })
 export class FooterComponent {
   facebook:IconDefinition=faFacebook;

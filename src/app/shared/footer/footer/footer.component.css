@@ -10,11 +10,10 @@ div.footer-container > div.title h2{
   letter-spacing: 4px;
 }
 
-div.content{
+div.content div.links{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-
+  justify-content: space-around;
 }
 
 div.content div div.title h2{
@@ -62,7 +61,7 @@ div.final div.icons{
   flex-direction: row;
   position: absolute;
   right: 20px;
-  top: 100px;
+  top: 90px;
 }
 
 div.final div.icons fa-icon{
@@ -84,6 +83,12 @@ div.final div.icons fa-icon:nth-child(2):hover{
 
 div.final div.icons fa-icon:nth-child(3):hover{
   color: rgb(0, 137, 200);
+}
+
+div.final div.declaration-final{
+  position: absolute;
+  right: 10px;
+  bottom: 2px;
 }
 
 div.final div.declaration-final p{
