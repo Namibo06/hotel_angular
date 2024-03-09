@@ -1,5 +1,7 @@
 main{
   border-bottom: 2px solid #444;
+  transition: 0.2s;
+  transition-timing-function: ease-in;
 }
 
 main,app-footer{
@@ -67,12 +69,14 @@ div.welcome-more-wrapper p{
   font-size: 16px;
   font-weight: 400;
   color: #666;
+  padding: 0 20x 0 0px;
 }
 
 /*accommodations*/
 section.accommodations{
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 section.accommodations div.our-accommodations{

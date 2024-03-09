@@ -1,0 +1,245 @@
+@media screen and (width < 1320px) {
+  /*accommodations*/
+  section.accommodations div.our-accommodations{
+    padding-left: 30px;
+  }
+
+  div.our-accommodations h2{
+    letter-spacing: 1px;
+    font-size: 24px;
+  }
+
+  div.our-accommodations div.types_of_accommodations{
+    padding-left: 30px;
+  }
+
+  div.types_of_accommodations div.type-single{
+    padding-bottom: 30px;
+  }
+
+  div.type-single fa-icon{
+    padding-right: 15px;
+  }
+
+  aside img{
+    height: 500px;
+  }
+}
+
+@media screen and (width < 1030px){
+  /*accommodations*/
+  section.accommodations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section.accommodations div.our-accommodations{
+    width: 100%;
+    padding-left: 0px;
+    text-align: center;
+  }
+
+  div.our-accommodations div.types_of_accommodations{
+    padding-left: 0px;
+  }
+
+  div.types_of_accommodations div.type-single{
+    text-align: left;
+    width: 400px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-40%);
+  }
+
+  section.accommodations aside{
+    width: 100%;
+    height: 100%;
+  }
+
+  aside img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    left: 0%;
+    transform: translateX(0%);
+  }
+}
+
+@media screen and (width < 890px) {
+  /*welcome*/
+  section.welcome h1{
+    font-size: 40px;
+    letter-spacing: 20px;
+    padding-bottom: 60px;
+  }
+
+  section.welcome p{
+    padding: 0 50px;
+    font-size: 14px;
+    line-height: 24px;
+    padding-bottom: 50px;
+  }
+
+  /*welcome more*/
+  div.welcome-more-wrapper{
+    padding: 30px 0px 60px 20px;
+  }
+
+  div.welcome-more-wrapper h2{
+    font-size: 24px;
+  }
+}
+
+@media screen and (width < 620px) {
+  /*welcome*/
+  section.welcome h1{
+    font-size: 27px;
+    letter-spacing: 15px;
+    padding-bottom: 50px;
+  }
+
+  section.welcome p{
+    padding: 0 20px;
+    line-height: 22px;
+    padding-bottom: 40px;
+  }
+
+  /*welcome more*/
+  div.welcome-more-wrapper{
+    padding: 30px 10px 60px 10px;
+  }
+
+  div.welcome-more-wrapper h2{
+    font-size: 21px;
+  }
+
+  div.welcome-more-wrapper p{
+    font-size: 14px;
+    padding: 0;
+    text-align: justify;
+  }
+}
+
+@media screen and (width < 460px) {
+  /*welcome*/
+  section.welcome h1{
+    font-size: 24px;
+    letter-spacing: 10px;
+    padding-bottom: 40px;
+  }
+
+  section.welcome p{
+    padding: 0 10px;
+    text-align: justify;
+    padding-bottom: 30px;
+  }
+
+  /*welcome more*/
+  div.welcome-more-wrapper{
+    padding: 30px 5px 60px 5px;
+  }
+
+  div.welcome-more-wrapper h2{
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+
+  div.welcome-more-wrapper p{
+    font-size: 12px;
+  }
+
+  /*accommodations*/
+  div.our-accommodations h2{
+    letter-spacing: 1px;
+    font-size: 21px;
+  }
+
+  div.types_of_accommodations div.type-single{
+    width: 280px;
+  }
+
+  div.type-single fa-icon{
+    font-size: 19px;
+    padding-right: 10px;
+  }
+
+  div.type-single span{
+    font-size: 15px;
+  }
+
+  div.type-single:nth-of-type(2) fa-icon:nth-child(1),div.type-single:nth-of-type(2) fa-icon:nth-child(2), div.type-single:nth-of-type(2) span{
+    position: relative;
+    right: 26px;
+  }
+}
+
+@media screen and (width < 360px) {
+  /*welcome*/
+  section.welcome h1{
+    font-size: 21px;
+    letter-spacing: 4px;
+    padding-bottom: 30px;
+  }
+
+  section.welcome p{
+    padding: 0 5px;
+    text-align: justify;
+    padding-bottom: 25px;
+  }
+
+  /*welcome more*/
+  div.welcome-more-wrapper h2{
+    font-size: 17px;
+    letter-spacing: 1px;
+  }
+
+  /*accommodations*/
+  div.our-accommodations h2{
+    letter-spacing: 0px;
+    font-size: 18px;
+  }
+
+  div.types_of_accommodations div.type-single{
+    width: 250px;
+  }
+
+  div.type-single fa-icon{
+    font-size: 16px;
+    padding-right: 5px;
+  }
+
+  div.type-single span{
+    font-size: 14px;
+  }
+
+  div.type-single:nth-of-type(2) fa-icon:nth-child(1),div.type-single:nth-of-type(2) fa-icon:nth-child(2), div.type-single:nth-of-type(2) span{
+    position: relative;
+    right: 20px;
+  }
+}
+
+@media screen and (width < 300px){
+ /*accommodations*/
+  div.our-accommodations h2{
+    font-size: 16px;
+  }
+
+  div.types_of_accommodations div.type-single{
+    width: 240px;
+  }
+
+  div.type-single fa-icon{
+    font-size: 15px;
+    padding-right: 5px;
+  }
+
+  div.type-single span{
+    font-size: 12px;
+  }
+
+  div.type-single:nth-of-type(2) fa-icon:nth-child(1),div.type-single:nth-of-type(2) fa-icon:nth-child(2), div.type-single:nth-of-type(2) span{
+    position: relative;
+    right: 18px;
+  }
+}
