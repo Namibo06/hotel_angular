@@ -1,0 +1,15 @@
+@media screen and (width < 480px) {
+  h2 a{
+    font-size: 21px;
+  }
+}
+
+@media screen and (width < 320px) {
+  div.header-container{
+    padding:20px 5px 40px 5px;
+  }
+
+  h2 a{
+    font-size: 18px;
+  }
+}

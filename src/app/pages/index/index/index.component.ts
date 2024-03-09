@@ -6,7 +6,7 @@ import { faBacon, faBicycle, faChevronDown, faCoffee, faDog, faHouse, faParking,
 @Component({
   selector: 'app-index',
   templateUrl: './index.component.html',
-  styleUrl: './index.component.css'
+  styleUrls:['./index.component.css','./index.responsive.component.css']
 })
 export class IndexComponent {
   chevronDown:IconDefinition=faChevronDown;
