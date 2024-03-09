@@ -1,0 +1,77 @@
+@media screen and (width < 620px) {
+  div div.title{
+    padding-left: 40px;
+  }
+
+  section div.historia p{
+    padding: 0 40px;
+  }
+
+  section div.vantagens ul{
+    padding-left: 40px;
+  }
+
+  section div.vantagens p{
+    padding: 0 40px;
+    padding-top: 40px;
+  }
+}
+
+@media screen and (width < 480px) {
+  div div.title{
+    padding-left: 20px;
+  }
+
+  section div.historia p{
+    padding: 0 20px;
+    font-size: 17px;
+  }
+
+  section div.vantagens ul{
+    padding-left: 20px;
+  }
+
+  section div.vantagens li{
+    font-size: 17px;
+  }
+
+  section div.vantagens p{
+    padding: 0 20px;
+    padding-top: 40px;
+    font-size: 16px;
+  }
+
+  div div.title h1{
+    font-size: 27px;
+  }
+}
+
+@media screen and (width < 360px) {
+  div div.title{
+    padding-left: 10px;
+  }
+
+  section div.historia p{
+    padding: 0 10px;
+    font-size: 14px;
+  }
+
+  section div.vantagens ul{
+    padding-left: 10px;
+  }
+
+  section div.vantagens li{
+    font-size: 14px;
+  }
+
+  section div.vantagens p{
+    padding: 0 10px;
+    font-size: 14px;
+    padding-top: 40px;
+  }
+
+  div div.title h1{
+    font-size: 24px;
+  }
+}
+
