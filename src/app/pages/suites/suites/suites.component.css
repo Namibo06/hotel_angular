@@ -1,5 +1,5 @@
 section.welcome{
-  padding: 40px 0 20px 0;
+  padding: 60px 0 0px 0;
   font-family: Arial, Helvetica, sans-serif;
   color: #444;
 }
@@ -40,7 +40,7 @@ swiper-slide picture{
 }
 
 swiper-slide picture img{
-  width: 300px;
+  width: 260px;
   height: 300px;
 }
 
@@ -78,6 +78,16 @@ swiper-slide div.information-suit div fa-icon{
 
 swiper-slide div.information-suit div:nth-child(1) span:nth-child(2){
   margin-left: 42px;
+}
+
+swiper-slide div.information-suit div:nth-child(2) span:nth-child(2){
+  position: relative;
+  left: 8px;
+}
+
+swiper-slide div.information-suit div:nth-child(2) span:nth-child(1){
+  position: relative;
+  left: 10px;
 }
 
 swiper-slide div.information-suit div span:nth-child(1){

@@ -1,0 +1,138 @@
+@media screen and (width < 580px) {
+  section.welcome h2{
+    font-size: 24px;
+  }
+
+  section.welcome p{
+    font-size: 17px;
+  }
+
+  div.suit-single{
+    top: 100px;
+  }
+
+  swiper-slide div.content-suit{
+    margin: 30px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  swiper-slide div.content-suit p{
+    font-size: 17px;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+  }
+
+  swiper-slide div.information-suit div fa-icon{
+    font-size: 18px;
+  }
+
+  swiper-slide button{
+    width: 400px;
+  }
+}
+
+@media screen and (width < 480px) {
+  section.welcome h2{
+    font-size: 21px;
+  }
+
+  section.welcome p{
+    font-size: 16px;
+  }
+
+  div.suit-single{
+    top: 110px;
+  }
+
+  swiper-slide div.content-suit p{
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+    letter-spacing: 1px;
+  }
+
+  swiper-slide div.information-suit div fa-icon{
+    font-size: 16px;
+  }
+
+  swiper-slide button{
+    width: 300px;
+  }
+}
+
+@media screen and (width < 390px) {
+  section.welcome h2{
+    font-size: 21px;
+  }
+
+  section.welcome p{
+    font-size: 16px;
+  }
+
+  div.suit-single{
+    top: 110px;
+  }
+
+  swiper-slide picture{
+    display: flex;
+    width: 100%;
+  }
+
+  swiper-slide picture img{
+    width: 100%;
+    height: 100%;
+  }
+
+  swiper-slide div.content-suit p{
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+    letter-spacing: 1px;
+  }
+
+  swiper-slide div.information-suit div{
+    margin-bottom: 0px;
+  }
+
+  div.information-suit,div.information-suit div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.information-suit,div.information-suit div span{
+    margin-bottom: 30px;
+  }
+
+  swiper-slide div.information-suit div fa-icon{
+    font-size: 16px;
+  }
+
+  swiper-slide div.information-suit div:nth-child(1) span:nth-child(2){
+    margin-left: 0px;
+  }
+
+  swiper-slide div.information-suit div:nth-child(2) span:nth-child(2){
+    left: 0px;
+  }
+
+  swiper-slide div.information-suit div:nth-child(2) span:nth-child(1){
+    left: 0px;
+  }
+
+  swiper-slide div.information-suit div span:nth-child(1){
+    margin-right: 0px;
+  }
+
+  swiper-slide button{
+    width: 250px;
+    margin-left: 0px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15px;
+    margin-top: 20px;
+  }
+}

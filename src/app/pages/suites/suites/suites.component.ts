@@ -6,7 +6,7 @@ import { faBath, faBed, faLayerGroup, faMoneyBill, faMoneyBillWave } from '@fort
 @Component({
   selector: 'app-suites',
   templateUrl: './suites.component.html',
-  styleUrl: './suites.component.css'
+  styleUrls: ['./suites.component.css','./suites.responsive.component.css']
 })
 export class SuitesComponent {
   suites:any=[];
